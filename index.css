@@ -1,0 +1,21 @@
+.main-container{
+    display: flex;
+    flex-flow: row;
+    width: 800px;
+}
+
+.main-container__options-dropdown{
+    margin-left: 0;
+}
+
+.main-container__generation-label{
+    margin-left: 220px;
+}
+
+.game-canvas{
+    border-style: solid;
+}
+
+.main-container__element_margin{
+    margin-left: 20px;
+}

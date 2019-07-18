@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <script type="text/javascript" src="index.js"></script>
+        <title>Conway's game of life</title>
+    </head>
+    <body>
+    <canvas id="gameCanvas" class="game-canvas"></canvas>
+    <div id = "main-container" class="main-container">
+        <select id="options" class="main-container__options-dropdown" value="0">
+            <option value="0">Choose Shape</option>
+            <option value="1">Clear</option>
+            <option value="2">Random</option>
+            <option value="3">Glider</option>
+            <option value="4">Small Exploder</option>
+            <option value="5">Exploder</option>
+            <option value="6">10 Cell Row</option>
+        </select>    
+        <button type="button" value="start" id="start" class="main-container__element_margin">Start!</button>
+        <label class="main-container__element_margin">Choose BoardSize:</label>
+        <input id="size" type="range" min="3" max="10" value="10">
+        <label class="main-container__generation-label">Generation No. </label>
+        <label id="generation">0</label>
+    </div>
+    <pre>
+        <h2>The Rules</h2>
+        <h3>For a space that is 'populated':</h3>
+        Each cell with one or no neighbors dies, as if by solitude.
+        Each cell with four or more neighbors dies, as if by overpopulation.
+        Each cell with two or three neighbors survives.
+        <h3>For a space that is 'empty' or 'unpopulated':</h3>
+        Each cell with three neighbors becomes populated.
+        <h2>The Controls</h2>
+        Choose a figure from the pull-down menu or make one yourself by clicking on the cells with a mouse
+        The Start button initiates the game.
+        The Slider is for choosing the desired grid size, it works only when the game isn't running.
+        Take into consideration that choosing new grid size will reset the board.
+    </pre>
+    <script src="index.js"></script>
+    </body>
+</html>
